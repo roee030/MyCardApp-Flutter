@@ -16,7 +16,40 @@ class MyApp extends StatelessWidget {
           title: Center(child: Text('Roee Angel')),
         ),
         backgroundColor: Colors.red,
-        body: Container(),
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Container(
+              child: Text('Container1'),
+              color: Colors.orange,
+              height: double.infinity,
+              width: 100.0,
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                  width: 100.0,
+                  height: 100.0,
+                  color: Colors.blue,
+                  child: Text('container2'),
+                ),
+                Container(
+                  width: 100.0,
+                  height: 100.0,
+                  color: Colors.white,
+                  child: Text('container3'),
+                ),
+              ],
+            ),
+            Container(
+              width: 100.0,
+              height: double.infinity,
+              color: Colors.blue,
+              child: Text('container2'),
+            ),
+          ],
+        ),
       ),
     );
   }
